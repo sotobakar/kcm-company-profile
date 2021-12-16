@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kata Cipta Makmur</title>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header
+      class="
+        sticky
+        top-0
+        z-30
+        h-16
+        md:h-24
+        shadow-lg
+        bg-primary
+        flex flex-row
+        justify-between
+      "
+    >
+      <div class="h-full">
+        <img
+          class="h-full w-auto p-1 md:p-3"
+          src="./assets/images/logo.png"
+          alt=""
+        />
+      </div>
+      <nav class="h-full">
+        <button id="menu-button" class="md:hidden h-full">
+          <img
+            class="h-full w-auto p-4"
+            src="./assets/icons/bars.svg"
+            alt="Menu"
+          />
+        </button>
+        <div
+          class="
+            pr-4
+            h-full
+            hidden
+            md:flex
+            flex-row
+            gap-x-8
+            items-center
+            uppercase
+            font-bold
+            text-tertiary
+          "
+        >
+          <a href="./">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./work.html">Work Experience</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="menu-layer"
+      class="hidden fixed top-0 w-full h-screen z-40 bg-black bg-opacity-40"
+    ></div>
+    <!-- Mobile Menu -->
+    <div
+      id="menu"
+      class="hidden fixed top-0 right-0 z-50 w-40 h-screen py-2 px-4 bg-primary"
+    >
+      <button id="menu-close" class="p-2">
+        <img class="w-6" src="./assets/icons/close.svg" alt="Close button" />
+      </button>
+      <div class="flex flex-col gap-y-2 uppercase font-medium text-tertiary">
+        <a href="./">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./work.html">Our Work</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <main>
+      <div class="bg-secondary py-6 px-4 text-accent">
+        <h1 class="text-center font-bold text-2xl text-tertiary">
+          Hubungi Kami
+        </h1>
+        <div class="mt-4 flex flex-col gap-y-4 items-center">
+          <a
+            href="https://wa.me/628119960206"
+            class="
+              w-72
+              p-2
+              bg-primary
+              shadow-lg
+              rounded-md
+              flex flex-row
+              items-center
+            "
+          >
+            <img
+              class="w-12"
+              src="./assets/icons/contact/whatsapp.png"
+              alt="WA"
+            />
+            <p class="ml-4 font-bold text-xl">+62 811-9960-206</p>
+          </a>
+          <a
+            href="mailto:kataciptamakmur@gmail.com"
+            class="
+              w-72
+              p-2
+              bg-primary
+              shadow-lg
+              rounded-md
+              flex flex-row
+              items-center
+            "
+          >
+            <img class="w-12" src="./assets/icons/contact/email.png" alt="WA" />
+            <p class="ml-4 font-bold text-sm">kataciptamakmur@gmail.com</p>
+          </a>
+          <div
+            class="
+              w-72
+              p-2
+              bg-primary
+              shadow-lg
+              rounded-md
+              flex flex-row
+              items-center
+            "
+          >
+            <img
+              class="w-12"
+              src="./assets/icons/contact/smartphone.png"
+              alt="WA"
+            />
+            <p id="phone-number" class="ml-4 font-bold text-xl">
+              0811-9960-206
+            </p>
+            <button
+              id="phone-copy-button"
+              class="ml-auto uppercase text-sm font-bold text-tertiary"
+            >
+              COPY
+            </button>
+          </div>
+        </div>
+        <h1 class="mt-6 text-center font-bold text-2xl text-tertiary">
+          Alamat Kami
+        </h1>
+        <h2 class="mt-4 text-center font-bold">Alamat Lengkap Kantor</h2>
+        <div class="mt-2 w-72 mx-auto text-center">
+          <p>Graha Krama Yudha Lantai 4 Unit B,</p>
+          <p>
+            Jl. Warung Jati Barat No. 43 Duren Tiga Pancoran Jakarta Selatan
+            Daerah Khusus Ibukota Jakarta 12760
+          </p>
+        </div>
+        <h2 class="mt-4 text-center font-bold md:text-2xl">Maps</h2>
+        <a href="#" class="mt-4 flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.024212338578!2d106.82629621431055!3d-6.260540863034655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f22d9fd85c9d%3A0xf2b2912ebd47650a!2sGraha%20Krama%20Yudha%2C%20Jl.%20Warung%20Buncit%20Raya%20No.43%2C%20RT.2%2FRW.2%2C%20Duren%20Tiga%2C%20Kec.%20Pancoran%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012760!5e0!3m2!1sen!2sid!4v1638783101084!5m2!1sen!2sid"
+            class="w-72 md:w-1/2 lg:h-[400px]"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <!-- <img class="w-full shadow-lg" src="./assets/images/map-big.png" alt="Map"> -->
+        </a>
+      </div>
+    </main>
+    <footer class="flex flex-row gap-x-4 p-4 bg-primary">
+      <div class="h-full w-16 md:w-1/5">
+        <img class="md:w-40" src="./assets/images/logo.png" alt="KCM" />
+      </div>
+      <div class="h-full w-4/5 flex flex-row divide-x-2 divide-tertiary">
+        <div class="w-2/3 pr-2 text-tertiary">
+          <p class="font-bold text-xs md:text-sm">Alamat</p>
+          <div class="flex flex-col md:flex-row md:gap-x-4">
+            <a
+              class="mt-2 w-24 md:w-2/5 hover:shadow-lg"
+              href="https://goo.gl/maps/fRXsqq4oK242CWfm6"
+              target="_blank"
+            >
+              <img src="./assets/images/map-kcm.png" alt="Alamat Kantor KCM" />
+            </a>
+            <div class="md:w-3/5 text-xxs md:text-xs lg:text-sm">
+              <p class="mt-2">Graha Krama Yudha Lantai 4 Unit B,</p>
+              <p>
+                Jl. Warung Jati Barat No. 43 Duren Tiga Pancoran Jakarta Selatan
+              </p>
+              <p>Email: kataciptamakmur@gmail.com</p>
+              <p>HP: 082112912926</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 pl-2 flex flex-col text-tertiary">
+          <p class="font-bold text-xs md:text-sm">Halaman</p>
+          <div class="mt-1 flex flex-col text-xs md:text-sm gap-y-1">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Our Work</p>
+            <p>Contact</p>
+          </div>
+          <p class="mt-auto self-end text-xs md:text-lg">© 2021</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kata Cipta Makmur</title>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header
+      class="
+        sticky
+        top-0
+        z-30
+        h-16
+        md:h-24
+        shadow-lg
+        bg-primary
+        flex flex-row
+        justify-between
+      "
+    >
+      <div class="h-full">
+        <img
+          class="h-full w-auto p-1 md:p-3"
+          src="./assets/images/logo.png"
+          alt=""
+        />
+      </div>
+      <nav class="h-full">
+        <button id="menu-button" class="md:hidden h-full">
+          <img
+            class="h-full w-auto p-4"
+            src="./assets/icons/bars.svg"
+            alt="Menu"
+          />
+        </button>
+        <div
+          class="
+            pr-4
+            h-full
+            hidden
+            md:flex
+            flex-row
+            gap-x-8
+            items-center
+            uppercase
+            font-bold
+            text-tertiary
+          "
+        >
+          <a href="./">Home</a>
+          <a href="./about.html">About Us</a>
+          <a href="./work.html">Work Experience</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="menu-layer"
+      class="hidden fixed top-0 w-full h-screen z-40 bg-black bg-opacity-40"
+    ></div>
+    <!-- Mobile Menu -->
+    <div
+      id="menu"
+      class="hidden fixed top-0 right-0 z-50 w-40 h-screen py-2 px-4 bg-primary"
+    >
+      <button id="menu-close" class="p-2">
+        <img class="w-6" src="./assets/icons/close.svg" alt="Close button" />
+      </button>
+      <div class="flex flex-col gap-y-2 uppercase font-medium text-tertiary">
+        <a href="./">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./work.html">Our Work</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <main>
+      <!-- Landing Page -->
+      <div
+        style="background-image: url('./assets/images/landing-page.jpg')"
+        class="h-52 md:h-[calc(100vh-4rem)] bg-cover"
+      >
+        <div
+          class="
+            w-full
+            h-full
+            bg-secondary bg-opacity-75
+            flex flex-col
+            justify-center
+            items-center
+            gap-y-1
+            md:gap-y-3
+            text-tertiary
+          "
+        >
+          <h1 class="text-2xl md:text-5xl font-bold">PT. Kata Cipta Makmur</h1>
+          <h4 class="text-sm md:text-xl font-medium">
+            IT Consultant & Solution
+          </h4>
+          <p class="text-xs md:text-lg w-2/3 text-center">
+            Memberi solusi layanan teknologi dan sistem informasi sejak 2012
+          </p>
+          <a
+            href="./contact.html"
+            class="
+              mt-2
+              rounded-md
+              px-6
+              py-3
+              text-primary
+              bg-accent
+              text-xs
+              md:text-lg
+            "
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+      <div
+        class="
+          h-52
+          md:h-screen
+          px-4
+          md:px-8
+          lg:px-12
+          py-4
+          md:py-10
+          bg-primary
+          flex flex-col
+        "
+      >
+        <h1
+          class="
+            fade
+            opacity-0
+            text-center
+            font-bold
+            text-2xl
+            md:text-4xl
+            text-tertiary
+          "
+        >
+          Layanan Kami
+        </h1>
+        <div
+          class="fade opacity-0 mt-4 md:mt-8 flex flex-row gap-x-8 lg:gap-x-16"
+        >
+          <div class="w-1/2 flex flex-col md:flex-row md:gap-x-2 lg:gap-x-6">
+            <img
+              class="mx-auto md:mx-0 h-20 md:h-40 w-auto"
+              src="./assets/icons/solution-desktop.png"
+              alt="IT Solutions"
+            />
+            <div class="text-gray-900">
+              <h1
+                class="
+                  mt-4
+                  md:mt-0
+                  text-center
+                  font-medium
+                  md:font-bold md:text-2xl
+                "
+              >
+                IT Solutions
+              </h1>
+              <p class="hidden md:block text-center font-medium">
+                Kami memberikan solusi IT terbaik, kami berusaha memberikan
+                solusi dalam kendala yang dihadapi dan memberikan solusi
+                terbaik.
+              </p>
+            </div>
+          </div>
+          <div class="w-1/2 flex flex-col md:flex-row md:gap-x-2 lg:gap-x-6">
+            <img
+              class="mx-auto md:mx-0 h-20 md:h-40 w-auto"
+              src="./assets/icons/consultant-desktop.png"
+              alt="IT Consultant"
+            />
+            <div class="text-gray-900">
+              <h1
+                class="
+                  mt-4
+                  md:mt-0
+                  text-center
+                  font-medium
+                  md:font-bold md:text-2xl
+                "
+              >
+                IT Consultant
+              </h1>
+              <p class="hidden md:block text-center font-medium">
+                Kami memberikan solusi IT terbaik, kami berusaha memberikan
+                solusi dalam kendala yang dihadapi dan memberikan solusi
+                terbaik.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h1
+          class="
+            fade
+            opacity-0
+            hidden
+            md:block
+            mt-10
+            text-center
+            font-bold
+            text-2xl
+            md:text-4xl
+            text-tertiary
+          "
+        >
+          Beberapa Kinerja Kami
+        </h1>
+        <img
+          class="fade opacity-0 hidden md:block mt-6 mx-auto md:h-32 lg:h-40"
+          src="./assets/images/products.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="
+          bg-accent
+          text-primary
+          px-4
+          py-6
+          md:flex md:flex-row md:justify-center
+        "
+      >
+        <div class="md:w-1/2 md:px-8">
+          <h1 class="fade opacity-0 text-center text-2xl md:text-4xl font-bold">
+            IT Solutions
+          </h1>
+          <p class="fade opacity-0 mt-4 font-medium text-center">
+            Memberi solusi informasi dan teknologi untuk kendala yang dihadapi.
+          </p>
+          <p class="fade opacity-0 hidden md:block mt-4 text-center">
+            Divisi-divisi kami siap membantu anda dalam pemecahan masalah anda.
+            Divisi-divisi kami antara lain adalah sebagai berkut:
+          </p>
+          <div
+            class="
+              fade
+              opacity-0
+              mt-4
+              hidden
+              md:flex
+              flex-col
+              items-baseline
+              gap-y-4
+            "
+          >
+            <div class="flex flex-row items-center gap-x-6">
+              <div class="flex-shrink-0 bg-white rounded-full">
+                <img
+                  class="w-20 p-4"
+                  src="./assets/icons/solutions/division/training.png"
+                  alt="Training and Consultation"
+                />
+              </div>
+              <p class="font-medium text-lg xl:text-2xl">
+                Training and Consultation
+              </p>
+            </div>
+            <div class="flex flex-row items-center gap-x-6">
+              <div class="flex-shrink-0 bg-white rounded-full">
+                <img
+                  class="w-20 p-4"
+                  src="./assets/icons/solutions/division/mobile.png"
+                  alt="Mobile"
+                />
+              </div>
+              <p class="font-medium text-lg xl:text-2xl">Mobile Application</p>
+            </div>
+            <div class="flex flex-row items-center gap-x-6">
+              <div class="flex-shrink-0 bg-white rounded-full">
+                <img
+                  class="w-20 p-4"
+                  src="./assets/icons/solutions/division/application.png"
+                  alt="App systems"
+                />
+              </div>
+              <p class="font-medium text-lg xl:text-2xl">Application Systems</p>
+            </div>
+            <div class="flex flex-row items-center gap-x-6">
+              <div class="flex-shrink-0 bg-white rounded-full">
+                <img
+                  class="w-20 p-4"
+                  src="./assets/icons/solutions/division/marketing.png"
+                  alt="Marketing"
+                />
+              </div>
+              <p class="font-medium text-lg xl:text-2xl">
+                Marketing and Business Development
+              </p>
+            </div>
+            <div class="flex flex-row items-center gap-x-6">
+              <div class="flex-shrink-0 bg-white rounded-full">
+                <img
+                  class="w-20 p-4"
+                  src="./assets/icons/solutions/division/technology.png"
+                  alt="Tech and Infrastructure"
+                />
+              </div>
+              <p class="font-medium text-lg xl:text-2xl">
+                Technology and Infrastructure
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fade opacity-0 md:w-1/2">
+          <p class="hidden md:block font-bold text-center text-4xl">
+            Keahlian Kami
+          </p>
+          <p class="md:hidden mt-4 font-medium text-center">
+            Our expertise includes but not limited to:
+          </p>
+          <div class="mt-4 flex flex-col gap-y-2 md:gap-y-6 text-sm">
+            <div class="flex flex-row justify-center gap-x-4">
+              <div class="flex flex-col w-32 items-center gap-y-2">
+                <img
+                  class="w-20 h-auto"
+                  src="./assets/icons/solutions/deployment.png"
+                  alt="IT Infrastructure Deployment"
+                />
+                <p class="font-medium">IT Deployment</p>
+              </div>
+              <div class="flex flex-col w-32 items-center gap-y-2">
+                <img
+                  class="w-20 h-auto"
+                  src="./assets/icons/solutions/cloud.png"
+                  alt="Cloud Computing"
+                />
+                <p class="font-medium">Cloud Computing</p>
+              </div>
+            </div>
+            <div class="flex flex-row justify-center gap-x-4">
+              <div class="flex flex-col w-32 items-center gap-y-2">
+                <img
+                  class="w-20 h-auto"
+                  src="./assets/icons/solutions/app.png"
+                  alt="App Development"
+                />
+                <p class="font-medium">App Development</p>
+              </div>
+              <div class="flex flex-col w-32 items-center gap-y-2">
+                <img
+                  class="w-20 h-auto"
+                  src="./assets/icons/solutions/web.png"
+                  alt="Web Development"
+                />
+                <p class="font-medium">Web Development</p>
+              </div>
+            </div>
+            <div class="flex flex-row justify-center gap-x-4">
+              <div class="flex flex-col w-32 items-center gap-y-2">
+                <img
+                  class="w-20 h-auto"
+                  src="./assets/icons/solutions/db.png"
+                  alt="Database"
+                />
+                <p class="font-medium">Database Support</p>
+              </div>
+              <div class="flex flex-col w-32 items-center gap-y-2">
+                <img
+                  class="w-20 h-auto"
+                  src="./assets/icons/solutions/network.png"
+                  alt="Network"
+                />
+                <p class="font-medium">Network</p>
+              </div>
+            </div>
+            <div class="flex flex-row justify-center">
+              <div class="flex flex-col w-32 items-center gap-y-2">
+                <img
+                  class="w-20 h-auto"
+                  src="./assets/icons/solutions/car.png"
+                  alt="Database"
+                />
+                <p class="font-medium">IT Maintenance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Permasalahan seperti
+          pembuatan infrastruktur IT, pengembangan bisnis menggunakan IT, hingga
+          modernisasi perusahaan siap kami layani. -->
+      <div class="bg-secondary text-accent px-4 py-6">
+        <div class="fade opacity-0">
+          <h1 class="text-center text-2xl font-bold">IT Consultant</h1>
+          <p class="mt-4 font-medium text-center">
+            Kami menyediakan layanan konsultasi di bidang IT.
+          </p>
+          <div class="mt-6 grid grid-cols-1 gap-y-4 font-medium">
+            <div class="flex flex-col items-center gap-y-2">
+              <div class="flex flex-row font-bold uppercase text-xl">
+                <p>1.</p>
+                <p class="ml-2">Understand</p>
+              </div>
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/consultant/idea.png"
+                alt="Understand"
+              />
+              <p class="text-center">
+                Fokus untuk memahami konteks dari situasi dan tujuan kasus.
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-y-2">
+              <div class="flex flex-row font-bold uppercase text-xl">
+                <p>2.</p>
+                <p class="ml-2">Structure</p>
+              </div>
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/consultant/structure.png"
+                alt="Understand"
+              />
+              <p class="text-center">
+                Framework untuk menyusun dan menyederhanakan kerumitan.
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-y-2">
+              <div class="flex flex-row font-bold uppercase text-xl">
+                <p>3.</p>
+                <p class="ml-2">Solve</p>
+              </div>
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/consultant/solve.png"
+                alt="Understand"
+              />
+              <p class="text-center">
+                Menyelami area yang berbeda dari framework untuk memecahkan
+                kasus.
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-y-2">
+              <div class="flex flex-row font-bold uppercase text-xl">
+                <p>4.</p>
+                <p class="ml-2">Deliver</p>
+              </div>
+              <img
+                class="w-32 h-auto"
+                src="./assets/icons/consultant/developer.png"
+                alt="Understand"
+              />
+              <p class="text-center">
+                Menyajikan rekomendasi dan memberikan alasan pendukung.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="flex flex-row gap-x-4 p-4 bg-primary">
+      <div class="h-full w-16 md:w-1/5">
+        <img class="md:w-40" src="./assets/images/logo.png" alt="KCM" />
+      </div>
+      <div class="h-full w-4/5 flex flex-row divide-x-2 divide-tertiary">
+        <div class="w-2/3 pr-2 text-tertiary">
+          <p class="font-bold text-xs md:text-sm">Alamat</p>
+          <div class="flex flex-col md:flex-row md:gap-x-4">
+            <a
+              class="mt-2 w-24 md:w-2/5 hover:shadow-lg"
+              href="https://goo.gl/maps/fRXsqq4oK242CWfm6"
+              target="_blank"
+            >
+              <img src="./assets/images/map-kcm.png" alt="Alamat Kantor KCM" />
+            </a>
+            <div class="md:w-3/5 text-xxs md:text-xs lg:text-sm">
+              <p class="mt-2">Graha Krama Yudha Lantai 4 Unit B,</p>
+              <p>
+                Jl. Warung Jati Barat No. 43 Duren Tiga Pancoran Jakarta Selatan
+              </p>
+              <p>Email: kataciptamakmur@gmail.com</p>
+              <p>HP: 082112912926</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 pl-2 flex flex-col text-tertiary">
+          <p class="font-bold text-xs md:text-sm">Halaman</p>
+          <div class="mt-1 flex flex-col text-xs md:text-sm gap-y-1">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Our Work</p>
+            <p>Contact</p>
+          </div>
+          <p class="mt-auto self-end text-xs md:text-lg">© 2021</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
